@@ -64,6 +64,10 @@ img {
     width: 100%;
 }
 
+/* **********************************
+MOBILE LAYOUT
+*********************************** */
+
 body {
     background-color: var(--pale-blue);
     height: 100vh;
@@ -169,8 +173,9 @@ h3 {
     text-decoration: none;
     background-color: var(--bright-blue);
     color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     transition: 0.3s;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .payment:hover {
@@ -189,12 +194,11 @@ h3 {
     color: var(--dark-blue);
 }
 
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
 
 
-
-/* ***************  ORDER SUMMARY  **************** */
+/* **********************************
+DESKTOP LAYOUT
+*********************************** */
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 450px;
