@@ -50,7 +50,7 @@ The designs were created to the following widths:
 }
 
 h1,
-h3,
+h2,
 p,
 a {
     font-family: 'Red Hat Display', sans-serif; 
@@ -147,7 +147,7 @@ main {
     font-size: .85em;
 }
 
-h3 {
+h2 {
     font-size: .85em;
     font-weight: 900;
 }
@@ -216,7 +216,7 @@ DESKTOP LAYOUT
         grid-gap: 25px;
     }
 
-    h3 {
+    h2 {
         font-size: 1rem;
     }
 
