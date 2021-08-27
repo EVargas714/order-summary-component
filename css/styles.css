@@ -1,0 +1,222 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --active-purple: #766cf1;
+}
+
+h1,
+h3,
+p,
+a {
+    font-family: 'Red Hat Display', sans-serif; 
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--pale-blue);
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    max-width: 330px;
+    margin: auto auto;
+    background-color: white;
+    border-radius: 1em;
+}
+
+
+/* ***************  COVER IMG & ORDER SUMMARY  **************** */
+.cover-image {
+    border-radius: 1em 1em 0 0;
+}
+
+main {
+    padding: 2em 1.5em;
+}
+
+.summary {
+    text-align: center;
+}
+
+.summary h1 {
+    color: black;
+    margin-bottom: 1em;
+}
+
+.summary p {
+    color: var(--desaturated-blue);
+    line-height: 1.5em;
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+    padding: 0 1.2em;
+}
+
+
+/* ***************  ANNUAL PLAN  **************** */
+.plan {
+    background-color: var(--very-pale-blue);
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.plan ul {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 15px;
+    align-items: center;
+}
+
+.change {
+    text-align: right;
+    font-size: .85rem;
+}
+
+.change a {
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.change a:link {
+    color: var(--bright-blue);
+}
+
+.change a:hover {
+    color: #766cf1;
+    text-decoration: none;
+}
+
+.plan ul p {
+    font-size: .85em;
+}
+
+h3 {
+    font-size: .85em;
+    font-weight: 900;
+}
+
+.price {
+    color: var(--desaturated-blue);
+}
+
+
+/* ***************  PAYMENT BUTTONS  **************** */
+.payment-container li {
+    text-align: center;
+    width: 100%;
+}
+
+.payment {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: .75em;
+    font-size: .85rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--bright-blue);
+    color: white;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+
+.payment:hover {
+    background-color:#766cf1;
+}
+
+.cancel {
+    text-decoration: none;
+    font-size: .85rem;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    transition: 0.3s;
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+
+
+/* ***************  ORDER SUMMARY  **************** */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 450px;
+    }
+
+    main {
+        padding: 2.5em 2.5em;
+    }
+
+    .plan {
+        padding: 1.5rem;
+    }
+
+    .plan ul {
+        grid-gap: 25px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .plan ul p {
+        font-size: 1rem;
+    }
+}
